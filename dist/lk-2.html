@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto:300,700&display=swap&subset=cyrillic"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/OverlayScrollbars.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="page page-inner">
+<!--Navigation-->
+<nav class="nav">
+    <div class="container">
+        <ul class="nav__menu menu">
+            <li>
+                <a href="" class="submenu-link">
+                    <svg>
+                        <use xlink:href="img/svg-sprite.svg#food"></use>
+                    </svg>
+                    Продукция</a>
+                <ul class="submenu">
+                    <li><a href="">Фрукты <span>2465</span></a></li>
+                    <li><a href="" class="submenu-link">Орехи и сухофрукты <span>200</span></a>
+                        <ul class="submenu">
+                            <li><a href="">меню третьего уровня <span>15</span></a></li>
+                            <li><a href="">меню третьего уровня <span>15</span></a></li>
+                            <li><a href="">меню третьего уровня <span>15</span></a></li>
+                            <li><a href="">меню третьего уровня <span>15</span></a></li>
+                            <li><a href="">меню третьего уровня <span>15</span></a></li>
+                            <li><a href="">меню третьего уровня <span>15</span></a></li>
+                            <li><a href="">меню третьего уровня <span>15</span></a></li>
+                            <li><a href="">меню третьего уровня <span>15</span></a></li>
+                            <li><a href="">меню третьего уровня <span>15</span></a></li>
+                            <li><a href="">меню третьего уровня <span>15</span></a></li>
+                            <li><a href="">меню третьего уровня <span>15</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Овощи <span>1500</span></a></li>
+                    <li><a href="">Зелень <span>1500</span></a></li>
+                    <li><a href="">Овощи <span>1500</span></a></li>
+                    <li><a href="">Овощи <span>1500</span></a></li>
+                    <li><a href="">Овощи <span>1500</span></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">
+                    <svg>
+                        <use xlink:href="img/svg-sprite.svg#waiter"></use>
+                    </svg>
+                    Поставщики</a>
+            </li>
+            <li>
+                <a href="">
+                    <svg>
+                        <use xlink:href="img/svg-sprite.svg#box"></use>
+                    </svg>
+                    Услуги</a>
+            </li>
+            <li>
+                <a href="">
+                    <svg>
+                        <use xlink:href="img/svg-sprite.svg#book"></use>
+                    </svg>
+                    Информация</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!--Navigation End-->
+
+<!-- Header -->
+<header class="header header-inner">
+    <div class="header__top">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-3">
+                    <a href="tel:+74951207447" class="header__phone link">
+                        <svg>
+                            <use xlink:href="img/svg-sprite.svg#phone"></use>
+                        </svg>
+                        +7 495 120 74 47
+                    </a>
+                </div>
+                <div class="col-md-9">
+                    <div class="header__links d-flex justify-content-end">
+                        <a href="#" class="header__user link">
+                            <svg>
+                                <use xlink:href="img/svg-sprite.svg#add-circle"></use>
+                            </svg>
+                            Добавить объявление
+                        </a>
+                        <a href="#" class="header__bookmark link">
+                            <svg>
+                                <use xlink:href="img/svg-sprite.svg#bookmark"></use>
+                            </svg>
+                            Закладки
+
+                            <span class="header__bookmark-number">28</span>
+                        </a>
+                        <a href="#modal" class="header__user link modal-js">
+                            <svg>
+                                <use xlink:href="img/svg-sprite.svg#user"></use>
+                            </svg>
+                            Личный кабинет
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <button type="button" class="header__hamburger hamburger-js">
+                        <svg>
+                            <use xlink:href="img/svg-sprite.svg#menu"></use>
+                        </svg>
+                        <svg>
+                            <use xlink:href="img/svg-sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                    <img src="img/logo.png" alt="АгроСити" class="img-fluid header__logo">
+                </div>
+                <div class="col-md-9">
+                    <form action="#" class="header__form form d-flex align-items-center">
+                        <input type="search" placeholder="Товар, услуга или поставщик">
+                        <button type="button">
+                            <svg>
+                                <use xlink:href="img/svg-sprite.svg#search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <a href="#" class="arrow-back">АгроСити</a>
+    <ul class="breadcrumb">
+        <li><a href="#">АгроСити</a></li>
+        <li><a href="#">Личный кабинет</a></li>
+        <li>Ваш счет</li>
+    </ul>
+    <div class="row">
+        <div class="col-lg-9">
+            <main class="bill">
+                <h2 class="account__title-h2 title-h2">Ваш счет</h2>
+                <div class="bill__change-block change-block">
+                    <div class="change-block__wrap">
+                        <p>Текущий баланс:</p>
+                        <span class="bill__text_bold">0 руб</span><a href="#bill-modal" class="advert__link modal-js">Пополнить</a>
+                    </div>
+                    <div class="change-block__wrap">
+                        <p>Текущий тариф:</p>
+                        <span class="bill__text_bold tariff">«Оптима»</span><a href="#tariff-modal"
+                                                                               class="advert__link modal-js">Изменить</a>
+                    </div>
+                </div>
+                <div class="bill__change-block change-block">
+                    <button class="filter__btn bill-btn-js active">Все платежи</button>
+                    <button class="filter__btn bill-btn-js">Пополнения</button>
+                    <button class="filter__btn bill-btn-js">Списания</button>
+                </div>
+                <div class="bill__card-block">
+                    <div class="bill__card card">
+                        <p class="card__operation-date">31.07.19 <span class="card__time">(23:11:12)</span></p>
+                        <p class="card__text">Пополнение счета
+                            <sapn class="card__text_fade">(Безналичная оплата)</sapn>
+                        </p>
+                        <p class="card__price card__price_fade">3 450 руб.</p>
+                        <span class="card__check card__check-time"></span>
+                    </div>
+                    <div class="bill__card card">
+                        <p class="card__operation-date">31.07.19 <span class="card__time">(23:11:12)</span></p>
+                        <p class="card__text">Оплата за объявление по тарифу «Оптима»</p>
+                        <p class="card__price card__price_red">-150 руб.</p>
+                        <span class="card__check card__check-yes"></span>
+                    </div>
+                    <div class="bill__card card">
+                        <p class="card__operation-date">31.07.19 <span class="card__time">(23:11:12)</span></p>
+                        <p class="card__text">Пополнение счета <span class="card__text_fade">(Яндекс Касса)</span></p>
+                        <p class="card__price card__price_green">3 550 руб.</p>
+                        <span class="card__check card__check-yes"></span>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center catalog__bottom">
+                        <p class="catalog__item-number">Показано: <span>9 из 54</span></p>
+                        <button type="button" class="catalog__btn-more">Показать еще
+                            <svg>
+                                <use xlink:href="img/svg-sprite.svg#restart"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="col-lg-3">
+            <aside class="sidebar__menu card card-sticky-js">
+                <ul>
+                    <li>
+                        <p>
+                            <svg width="23" height="26">
+                                <use xlink:href="img/svg-sprite.svg#paper"></use>
+                            </svg>
+                        </p>
+                        <a href="#" class="card__title link">Ваши объявления</a>
+                    </li>
+                    <li>
+                        <p>
+                            <svg width="28" height="28">
+                                <use xlink:href="img/svg-sprite.svg#talk"></use>
+                            </svg>
+                        </p>
+                        <a href="#" class="card__title link">Сообщения</a>
+                        <span class="card__sign card__sign_orange">3</span>
+                    </li>
+                    <li>
+                        <p>
+                            <svg width="28" height="18">
+                                <use xlink:href="img/svg-sprite.svg#ruble"></use>
+                            </svg>
+                        </p>
+                        <a href="#" class="card__title link active">Ваш счет</a>
+                        <span class="card__sign card__sign_red">!</span>
+                    </li>
+                    <li>
+                        <p>
+                            <svg width="19" height="26">
+                                <use xlink:href="img/svg-sprite.svg#bookmark2"></use>
+                            </svg>
+                        </p>
+                        <a href="#" class="card__title link">Закладки</a>
+                        <span class="card__sign card__sign_orange">3</span>
+                    </li>
+                    <li>
+                        <p>
+                            <svg width="20" height="26">
+                                <use xlink:href="img/svg-sprite.svg#shoping-list"></use>
+                            </svg>
+                        </p>
+                        <a href="#" class="card__title link">Подписки</a>
+                        <span class="card__sign card__sign_orange">8</span>
+                    </li>
+                    <li>
+                        <p>
+                            <svg width="28" height="22">
+                                <use xlink:href="img/svg-sprite.svg#name"></use>
+                            </svg>
+                        </p>
+                        <a href="#" class="card__title link">Профиль компании</a>
+                    </li>
+                    <li>
+                        <p>
+                            <svg width="28" height="28">
+                                <use xlink:href="img/svg-sprite.svg#question"></use>
+                            </svg>
+                        </p>
+                        <a href="#" class="card__title link">Техническая поддержка</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+
+</div>
+
+<!--Footer-->
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <p class="footer__text">© 2019 AgroSity.ru</p>
+                <p class="footer__text">Все права защищены</p>
+            </div>
+            <div class="col-md-9">
+                <ul class="footer__menu d-flex">
+                    <li><a href="#" class="link" title="Новости">Новости</a></li>
+                    <li><a href="#" class="link" title="Аналитика">Аналитика</a></li>
+                    <li><a href="#" class="link" title="О проекте">О проекте</a></li>
+                    <li><a href="#" class="link" title="Правила сайта">Правила сайта</a></li>
+                    <li><a href="#" class="link" title="Тарифы">Тарифы</a></li>
+                </ul>
+                <a href="#" class="footer__link link">Политика конфиденциальности</a>
+                <a href="#" class="footer__link link">Обратная связь</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--Footer End-->
+
+<!--Modal-->
+<div class="bill-modal modal mfp-hide mfp-fade" id="bill-modal">
+    <p class="modal_title">Пополнить счет</p>
+    <form action="#" class="modal__form form">
+        <label for="modal-amount" class="form__label">Сумма:</label>
+        <div class="d-flex align-items-center">
+            <div class="form__input-wrap">
+                <input type="text" class="form__input" id="modal-amount" name="modal-amount" required>
+            </div>
+            <span class="form_ruble">руб</span>
+        </div>
+        <div class="form__row">
+            <p class="form__label">Способ оплаты:</p>
+            <div class="form__radio-wrap">
+                <input type="radio" name="pay-choice" value="pay-choice" id="radio1" checked>
+                <label for="radio1" class="form__label-radio"></label>
+                <div>
+                    <p>Безналичная оплата</p>
+                    <p class="card__text_fade">Выставить счет для оплаты от организации или ИП</p>
+                </div>
+            </div>
+            <div class="form__radio-wrap">
+                <input type="radio" name="pay-choice" value="email" id="radio2">
+                <label for="radio2" class="form__label-radio"></label>
+                <div>
+                    <p>Яндекс.Касса</p>
+                    <p class="card__text_fade">Банковские карты, электронные деньги и др.</p>
+                </div>
+            </div>
+        </div>
+        <div class="form__bottom">
+            <button type="button" class="form__btn_green btn btn_green">Продолжить</button>
+        </div>
+    </form>
+</div>
+<div class="bill-modal tariff-modal modal mfp-hide mfp-fade" id="tariff-modal">
+    <p class="modal_title">Выберите тариф</p>
+    <div class="tabs">
+        <div class="change-block tabs-wrap">
+            <button class="filter__btn tab active">Льготный</button>
+            <button class="filter__btn tab">Оптима</button>
+            <button class="filter__btn tab">Бизнес</button>
+        </div>
+        <div class="tab-content active">
+            <table class="modal__table table">
+                <tr>
+                    <td>Размещение объявлений</td>
+                    <td>10 руб./шт</td>
+                </tr>
+                <tr>
+                    <td>Период показа объявления</td>
+                    <td>30 дн.</td>
+                </tr>
+                <tr>
+                    <td>Абонентская плата</td>
+                    <td>отсутствует</td>
+                </tr>
+                <tr>
+                    <td>Срок действия тарифа</td>
+                    <td>30 дн.</td>
+                </tr>
+            </table>
+            <div class="form__bottom">
+                <button type="button" class="form__btn_green btn btn_green tariff-btn-js">Выбрать этот тариф</button>
+            </div>
+        </div>
+        <div class="tab-content">
+            <table class="modal__table table">
+                <tr>
+                    <td>Размещение объявлений</td>
+                    <td>20 руб./шт</td>
+                </tr>
+                <tr>
+                    <td>Период показа объявления</td>
+                    <td>30 дн.</td>
+                </tr>
+                <tr>
+                    <td>Абонентская плата</td>
+                    <td>отсутствует</td>
+                </tr>
+                <tr>
+                    <td>Срок действия тарифа</td>
+                    <td>30 дн.</td>
+                </tr>
+            </table>
+            <div class="form__bottom">
+                <button type="button" class="form__btn_green btn btn_green tariff-btn-js">Выбрать этот тариф</button>
+            </div>
+        </div>
+        <div class="tab-content">
+            <table class="modal__table table">
+                <tr>
+                    <td>Размещение объявлений</td>
+                    <td>30 руб./шт</td>
+                </tr>
+                <tr>
+                    <td>Период показа объявления</td>
+                    <td>30 дн.</td>
+                </tr>
+                <tr>
+                    <td>Абонентская плата</td>
+                    <td>отсутствует</td>
+                </tr>
+                <tr>
+                    <td>Срок действия тарифа</td>
+                    <td>30 дн.</td>
+                </tr>
+            </table>
+            <div class="form__bottom">
+                <button type="button" class="form__btn_green btn btn_green tariff-btn-js">Выбрать этот тариф</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.overlayScrollbars.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.min.js"></script>
+<script src="js/svg4everybody.min.js"></script>
+<script>
+    svg4everybody();
+
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

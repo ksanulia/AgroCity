@@ -1,0 +1,197 @@
+@media screen and (max-width: 1280px) {
+    /* CSS для ширины от 992px до 1279px */
+
+}
+@media screen and (max-width: 992px) {
+    /* CSS для ширины от 768px до 991px */
+    .sidebar {
+        position: absolute;
+        top: 150px;
+        left: 15px;
+        width: 44%;
+        padding-bottom: 0;
+        padding-top: 0;
+        box-shadow: none;
+        z-index: 100;
+    }
+    .catalog__filter-block {
+        position: absolute;
+        top: 150px;
+        border-radius: 4px;
+        width: 44%;
+        left: calc(44% + 25px);
+        z-index: 100;
+    }
+    .sidebar > .block__wrap {
+        box-shadow: 0 1px 30px rgba(33, 33, 33, 0.2);
+        border-radius: 5px;
+    }
+    .sidebar .block__wrap,
+    .catalog__filter-block .block__wrap,
+    .sorting__btn {
+        display: none;
+    }
+
+    .sidebar__title-h3,
+    .catalog__filter-title {
+        display: block;
+        cursor: pointer;
+        pointer-events: auto;
+        background: #54b94a;
+        line-height: 42px;
+        height: 100%;
+        width: 100%;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        border-radius: 4px;
+        padding-left: 0;
+    }
+    .sidebar__title-h3 {
+        position: relative;
+    }
+    .catalog__filter-title svg,
+    .sidebar__title-h3 svg,
+    .sorting > button > svg {
+        display: inline-block;
+    }
+    .sorting > button {
+        width: 42px;
+        height: 42px;
+        border-radius: 4px;
+        background-color: #54b94a;
+        margin-left: 0;
+    }
+    .btn-toggle {
+        display: none;
+    }
+    .catalog__sorting-block {
+        padding-bottom: 0;
+        border-bottom: none;
+        margin-bottom: 80px;
+    }
+    .sorting {
+        position: absolute;
+        top: 150px;
+        right: 15px;
+    }
+    .sorting .filter__dropdown {
+        left: auto;
+        right: 0;
+    }
+    .catalog__filter-block .block__wrap {
+        border-radius: 5px;
+        background: #fff;
+        padding: 15px;
+        box-shadow: 0 1px 30px rgba(33, 33, 33, 0.2);
+    }
+    .catalog__filter > span,
+    .card__bookmark span,
+    .breadcrumb {
+        display: none;
+    }
+    .catalog__filter,
+    .arrow-back {
+        display: block;
+    }
+    .filter {
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    .filter__dropdown {
+        top: 100%;
+        padding: 15px;
+    }
+    .block {
+        padding: 5px 15px 10px;
+    }
+    .catalog__sorting-block button svg:hover {
+        fill: #fff;
+    }
+}
+@media screen and (max-width: 768px) {
+/* CSS для ширины от 576px до 767px */
+    .sidebar,
+    .catalog__filter-block {
+        width: 42%;
+    }
+    .catalog__filter-block {
+        left: calc(42% + 25px);
+    }
+    .title-h2 br {
+        display: none;
+    }
+}
+@media screen and (max-width: 576px) {
+    /* CSS для ширины до 575px (включительно) */
+    .container {
+        width: 90%;
+    }
+    .arrow-back {
+        margin: 0 0 25px;
+    }
+    .title-h2 {
+        font-size: 25px;
+    }
+    .catalog__title-h2 {
+        margin-bottom: 10px;
+    }
+    .sidebar,
+    .catalog__filter-block {
+        width: 35%;
+        top: 120px;
+        overflow: visible;
+    }
+    .sidebar > .block__wrap {
+        position: absolute;
+        left: 0;
+        width: 230px;
+        background: #fff;
+    }
+    .catalog__filter-block .block__wrap {
+        position: absolute;
+        left: auto;
+        right: 0;
+        width: 230px;
+        background: #fff;
+    }
+    .sorting {
+        top: 120px;
+        right: 0;
+    }
+    .catalog__filter-block {
+        left: auto;
+        right: 20%;
+        height: 42px;
+    }
+    .catalog__banner .title-h2 {
+        font-size: 18px;
+    }
+    .catalog__btn {
+        font-size: 14px;
+        height: 42px;
+        margin-top: 18px;
+    }
+    .catalog__banner {
+        padding: 40px 20px 45px;
+        width: 116%;
+        margin-left: -8%;
+    }
+    main {
+        padding-bottom: 30px;
+        position: relative;
+    }
+    .modal {
+        width: 280px;
+        padding: 15px;
+    }
+    .form__btn {
+        width: 50%;
+    }
+    .form__btn_green {
+        width: 50%;
+        margin-right: 15px;
+    }
+}
