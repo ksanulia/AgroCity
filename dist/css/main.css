@@ -2276,6 +2276,10 @@ input[type="radio"]:checked ~ .form__label-radio:after {
     margin-top: 5px;
     font-size: 12px;
 }
+.profile__btn {
+    text-align: center;
+    line-height: 42px;
+}
 /*Product-card Page*/
 .product-card .bill__text_bold {
     margin: 10px 0 0;

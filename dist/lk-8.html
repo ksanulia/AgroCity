@@ -507,10 +507,20 @@
                         </div>
                         <form action="#" class="profile__files-upload">
                             <label for="file" id="fileAttached" class="modal__file-attached download d-flex">
-                                <button class="btn btn_green profile__btn">Добавить файлы</button>
-                                <span class="card__text_fade">до 10 файлов по 1 мб</span>
+                                <svg width="35" height="35">
+                                    <use xlink:href="img/svg-sprite.svg#paper-clip"></use>
+                                </svg>
+                                <p>
+                                    <span class="card__title">Прикрепите файлы</span><br>
+                                    <span class="card__text_fade">до 10 файлов по 1 мб</span>
+                                </p>
                                 <input type="file" id="file">
                             </label>
+                            <div class="modal__message-download files-wrap-js d-flex align-items-center"></div>
+                            <div class="description__btn-wrap d-flex justify-content-start">
+                                <button type="button" class="btn btn_green">Сохранить</button>
+                                <button type="reset" class="btn btn_grey">Отмена</button>
+                            </div>
                         </form>
                     </div>
                 </div>
