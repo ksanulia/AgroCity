@@ -193,7 +193,8 @@ svg {
 .submenu > li:hover > a,
 .card__title:hover,
 .footer a:hover,
-.messages__card:hover {
+.messages__card:hover,
+.filter__dropdown a:hover {
     color: #9e9e9e;
 }
 
@@ -1513,7 +1514,7 @@ input[type="radio"]:checked ~ .form__label-radio:after {
 }
 
 .description__select-wrap {
-    width: 50%;
+    width: 49%;
     margin-top: auto;
 }
 
@@ -2042,7 +2043,7 @@ input[type="radio"]:checked ~ .form__label-radio:after {
 }
 
 .card__menu .filter__dropdown li:first-child {
-    display: none;
+    /*display: none;*/
 }
 
 .card.list2 .card__menu {
@@ -2209,20 +2210,25 @@ input[type="radio"]:checked ~ .form__label-radio:after {
     min-height: 50px;
     padding: 15px 0;
 }
+
 #file {
     display: none;
 }
+
 .modal__file-attached {
     cursor: pointer;
     margin-top: 25px;
 }
+
 .support__textarea-wrap {
     display: block;
 }
+
 .support__btn {
     width: 140px;
     margin-top: 20px;
 }
+
 .support__textarea {
     min-height: 180px;
     padding: 15px;
@@ -2231,12 +2237,52 @@ input[type="radio"]:checked ~ .form__label-radio:after {
     color: inherit;
     line-height: 20px;
 }
+
 .support .account__title-h2 {
     margin-bottom: 25px;
+}
+.profile .description__row:nth-of-type(2),
+.profile .description__row:nth-of-type(5),
+.profile .description__row:nth-of-type(7) {
+    margin-bottom: 20px;
+}
+.profile__btn {
+    width: 185px;
+    margin-right: 15px;
+}
+.profile__btn-more {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: transparent;
+}
+.profile__btn-more svg {
+    fill: #bdbdbd;
+}
+.profile__btn-more.open {
+    background: #e0e0e0;
+}
+.profile .card__menu {
+    z-index: auto;
+}
+.profile-modal .modal_title {
+    margin-bottom: 15px;
+}
+.modal__sub-title {
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.profile-modal .modal__text {
+    margin-top: 5px;
+    font-size: 12px;
 }
 /*Product-card Page*/
 .product-card .bill__text_bold {
     margin: 10px 0 0;
+}
+
+.profile__date .select2-container:not(:last-child) {
+    margin-right: 20px;
 }
 
 .product-card__title-h2 {
@@ -2311,6 +2357,8 @@ input[type="radio"]:checked ~ .form__label-radio:after {
     object-fit: cover;
     margin-bottom: 20px;
 }
+
+
 
 /*Provider-card*/
 

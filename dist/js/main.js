@@ -7,9 +7,9 @@ $(document).ready(function () {
         $('.filter__btn-js').not(this).removeClass('open').next('.filter__dropdown').slideUp('slow');
         var cardStop = $(this).closest(".card").find('.card__stop');
         if (cardStop.length) {
-            $(this).next('.filter__dropdown').find('li:first').show();
+            $(this).next('.filter__dropdown').find('.prolong').show();
         } else {
-            $(this).next('.filter__dropdown').find('li:first').hide();
+            $(this).next('.filter__dropdown').find('.prolong').hide();
         }
     });
 
@@ -58,7 +58,13 @@ $(document).ready(function () {
     $('.modal-js').magnificPopup({
         type: 'inline',
         removalDelay: 300,
-        mainClass: 'mfp-fade'
+        mainClass: 'mfp-fade',
+        callbacks: {
+            beforeOpen: function () {
+                $('.filter__dropdown').slideUp();
+                $('.filter__btn-js').removeClass('open');
+            }
+        }
     });
 
     //SignIn/Up
