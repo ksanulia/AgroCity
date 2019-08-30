@@ -2176,10 +2176,12 @@ input[type="radio"]:checked ~ .form__label-radio:after {
 .modal__message-download svg {
     fill: #bebebe;
     margin-right: 10px;
+    min-width: 24px;
 }
 
 .modal__message-download a {
     margin-right: 15px;
+    margin-bottom: 10px;
     color: #54b94a;
 }
 
