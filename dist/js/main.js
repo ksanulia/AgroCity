@@ -283,23 +283,6 @@ $(document).ready(function () {
 
     // File Attached
     var j = 0;
-    var fileUploadIconAdd = function (iconName, name) {
-        $('.files-wrap-js').append('<a href="#" class="d-flex align-items-center link"' +
-            ' download>' +
-            '<svg width="18" height="18">' +
-            '<use xlink:href="img/svg-sprite.svg#' + iconName + '"></use>' +
-            '</svg>' +
-            '<p>' + name + '</p>' +
-            '<span class="filter__close"></span></a>');
-    };
-    var fileDelete = function () {
-        $('.filter__close').on('click', function (e) {
-            $(this).parent().remove();
-            $('#fileAttached').show();
-            j--;
-            e.stopImmediatePropagation();
-        });
-    };
     $('#file').change(function () {
         var size = this.files[0].size;
         var name = this.files[0].name;
@@ -309,53 +292,34 @@ $(document).ready(function () {
                 case 'jpg':
                 case 'jpeg':
                 case 'png':
-                    fileUploadIconAdd('image', name);
+                    $('.files-wrap-js').append('<a href="#" class="d-flex align-items-center link"' +
+                        ' download>' +
+                        '<svg width="18" height="18">' +
+                        '<use xlink:href="img/svg-sprite.svg#image"></use>' +
+                        '</svg>' +
+                        '<p>' + name + '</p>' +
+                        '<span class="filter__close"></span></a>');
                     break;
                 default:
-                    fileUploadIconAdd('file', name);
+                    $('.files-wrap-js').append('<a href="#" class="d-flex align-items-center link"' +
+                        ' download>' +
+                        '<svg width="18" height="20">' +
+                        '<use xlink:href="img/svg-sprite.svg#file"></use>' +
+                        '</svg>' +
+                        '<p>' + name + '</p>' +
+                        '<span class="filter__close"></span></a>');
             }
             j++;
         }
         if (j == 10) {
             $('#fileAttached').hide();
         }
-        fileDelete();
-    });
 
-    $('#file-price').on('change', function (event) {
-        var countFiles = $(this)[0].files.length;
-        var files = event.target.files;
-        if ($(this)[0].files && countFiles < 11) {
-            for (j; j < countFiles; j++) {
-                var size = files[j].size;
-                var name = files[j].name;
-                var ext = name.substr(name.lastIndexOf('.') + 1);
-                if (size <= 1000000) {
-                    switch (ext) {
-                        case 'jpg':
-                        case 'jpeg':
-                        case 'png':
-                            fileUploadIconAdd('image', name);
-                            break;
-                        default:
-                            fileUploadIconAdd('file', name);
-                    }
-                } else {
-                    alert('Слишком большой файл');
-                    return;
-                }
-            }
-        } else {
-            alert('Файлов больше 10');
-            return;
-        }
-        fileDelete();
-        $.magnificPopup.open({
-            items: {
-                src: '#file-upload',
-                type: 'inline'
-            }
+        $('.filter__close').on('click', function (e) {
+            $(this).parent().remove();
+            $('#fileAttached').show();
+            j--;
+            e.stopImmediatePropagation();
         });
-    })
-});
-
+    });
+})
