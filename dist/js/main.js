@@ -4,6 +4,7 @@ $(document).ready(function () {
     $('.filter__btn-js').on('click', function () {
         $(this).toggleClass("open");
         $(this).next('.filter__dropdown').slideToggle('slow');
+        $(this).closest('.catalog__filter-block').addClass('overlay');
         $('.filter__btn-js').not(this).removeClass('open').next('.filter__dropdown').slideUp('slow');
         var cardStop = $(this).closest(".card").find('.card__stop');
         if (cardStop.length) {
@@ -12,32 +13,49 @@ $(document).ready(function () {
             $(this).next('.filter__dropdown').find('.prolong').hide();
         }
     });
-
+    $('.filter-close-js').on('click', function () {
+        $(this).parent('.filter__dropdown').slideUp().prev('.filter__btn-js').removeClass('open');
+        $('.catalog__filter-block').removeClass('overlay');
+    });
     // Scrollbar
 
     $('.filter__list').overlayScrollbars({});
-    $('.submenu-js').overlayScrollbars({});
+
     $('.modal__body').overlayScrollbars({});
 
     //Sidebar filter
 
-    $('.block-toggle-js').on('click', function () {
+    $('.toggle-js').on('click', function () {
         $(this).toggleClass("close");
+        $('body').addClass('overlay');
         $(this).next('.block__wrap').slideToggle('slow');
     });
-
+    $('.region-toggle-js').on('click', function () {
+        $(this).toggleClass("open");
+        $('body').addClass('overlay');
+        $('.sidebar').slideToggle('slow');
+    });
+    $('.filter-toggle-js').on('click', function () {
+        $(this).toggleClass("open");
+        $('.catalog__filter-block').slideToggle('slow');
+    });
+    $('.region-close-js').on('click', function () {
+        $('.sidebar').slideUp();
+        $('body').removeClass('overlay');
+        $('.region-toggle-js').removeClass('open');
+    });
     //Card toggle
 
     $('.btn-toggle').on('click', function () {
         $('.btn-toggle').removeClass('active');
         $(this).addClass('active');
         if ($(this).hasClass('btn-list')) {
-            $('.catalog__card').addClass('list').removeClass('list2').parent().removeClass('col-lg-4 col-sm-6 col-12').addClass('col-12');
+            $('.catalog__card').addClass('list').removeClass('list2').parent().removeClass('col-md-4 col-sm-6 col-12').addClass('col-12');
         } else if ($(this).hasClass('btn-list2')) {
-            $('.catalog__card').addClass('list2').parent().removeClass('col-lg-4 col-sm-6 col-12').addClass('col-12');
+            $('.catalog__card').addClass('list2').parent().removeClass('col-md-4 col-sm-6 col-12').addClass('col-12');
         } else {
-            $('.catalog__card').removeClass('list list2').parent().removeClass('col-12').addClass('col-lg-4 col-sm-6 col-12');
-            ;
+            $('.catalog__card').removeClass('list list2').parent().removeClass('col-12').addClass('col-md-4 col-sm-6' +
+                ' col-12');
         }
     });
 
@@ -126,9 +144,10 @@ $(document).ready(function () {
 
     // Navigation Toggle
 
-    $('.submenu-link-js').on('click', function () {
-        // $(this).toggleClass('active');
-        $(this).children('.submenu').slideToggle('slow');
+    $('.submenu-link-js').on('click', function (e) {
+        e.stopImmediatePropagation();
+        $(this).parent('li').toggleClass('open');
+        $(this).next('.submenu').slideToggle();
     });
 
     $('.advert-toggle-js').on('click', function (e) {
@@ -136,6 +155,20 @@ $(document).ready(function () {
         $('.advert__nav').slideToggle('slow');
     });
 
+    $('.btn-toggle-js').on('click', function (e) {
+        $(this).next('.block-toggle-js').slideToggle('slow');
+    });
+
+    $('.hamburger-js').on('click', function () {
+        $(this).toggleClass("open");
+        $('body').addClass('overlay');
+        $('.header__bottom').slideToggle('slow');
+    });
+    $('.btn-close-js').on('click', function () {
+        $('.header__bottom').slideUp();
+        $('body').removeClass('overlay');
+        $('.hamburger-js').removeClass('open');
+    });
     // Select & Card
 
     $('.select-js').each(function () {

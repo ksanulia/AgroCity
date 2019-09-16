@@ -22,8 +22,9 @@
     <div class="header__top">
         <div class="container">
             <div class="row justify-content-between align-items-center">
-                <div class="col-md-6">
-                    <ul class="header__menu">
+                <div class="col-lg-6 col-md-4 col-5">
+                    <button type="button" class="header__menu-btn btn-toggle-js">agro-gator</button>
+                    <ul class="header__menu block-toggle-js">
                         <li><a href="#" class="link">a-platforma</a></li>
                         <li class="active"><a href="#" class="link">agro-gator</a></li>
                         <li><a href="#" class="link">agro-ct</a></li>
@@ -31,8 +32,8 @@
                         <li><a href="#" class="link">agro-live</a></li>
                     </ul>
                 </div>
-                <div class="col-md-6">
-                    <div class="header__links d-flex justify-content-end">
+                <div class="col-lg-6 col-md-8 col-7">
+                    <div class="header__links d-flex justify-content-sm-end justify-content-center">
                         <a href="tel:+74951207447" class="header__phone link">
                             <svg>
                                 <use xlink:href="img/svg-sprite.svg#phone"></use>
@@ -59,20 +60,11 @@
     <div class="header__middle">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-4 d-flex align-items-end justify-content-between">
-                    <img src="img/agro-gator.svg" alt="АгроСити" class="img-fluid header__logo">
-                    <p class="header__logo-description">Агрегатор предложений<br> поставщиков</p>
-                </div>
-                <div class="col-md-8 d-flex">
-                    <form action="#" class="header__form form d-flex align-items-center">
-                        <input type="search" placeholder="Товар, услуга или поставщик">
-                        <button type="button">
-                            <svg>
-                                <use xlink:href="img/svg-sprite.svg#search"></use>
-                            </svg>
-                        </button>
-                    </form>
-                    <a href="#" class="link btn btn_green header__btn">Подать объявление</a>
+                <div class="col-xl-4 col-lg-5 d-flex justify-content-between align-items-sm-end align-items-start">
+                    <a href="#" class="link d-sm-flex d-block align-items-end justify-content-between">
+                        <img src="img/agro-gator.svg" alt="АгроСити" class="img-fluid header__logo">
+                        <span class="header__logo-description">Агрегатор предложений<br> поставщиков</span>
+                    </a>
                     <button type="button" class="header__hamburger hamburger-js">
                         <svg>
                             <use xlink:href="img/svg-sprite.svg#menu"></use>
@@ -82,14 +74,77 @@
                         </svg>
                     </button>
                 </div>
+                <div class="col-xl-8 col-lg-7 d-sm-flex d-block">
+                    <form action="#" class="header__form form d-flex align-items-center">
+                        <input type="search" placeholder="Товар, услуга или поставщик">
+                        <button type="button">
+                            <svg>
+                                <use xlink:href="img/svg-sprite.svg#search"></use>
+                            </svg>
+                        </button>
+                    </form>
+                    <a href="#" class="link btn btn_green header__btn">Подать объявление</a>
+                </div>
             </div>
-            <div class="d-flex header__bottom justify-content-between">
-                <ul class="header__menu-main d-flex align-items-center">
-                    <li class="active submenu-link-js"><a href="#" class="link">
-                        Продукция
+            <div class="header__bottom">
+                <p class="sidebar__title-h3 title-h3 title-h3_white">
+                    Меню
+                    <span class="btn-close btn-close-js"></span>
+                </p>
+                <ul class="header__menu-main header__menu-main_1">
+                    <li class="active submenu-link-js">
+                        <a href="#" class="link">
+                            <svg>
+                                <use xlink:href="img/svg-sprite.svg#food"></use>
+                            </svg>
+                            Продукция
+                        </a>
+                        <span class="submenu-link submenu-link-js"></span>
                         <ul class="submenu">
-                            <li><a href="">Фрукты <span>2465</span></a></li>
-                            <li><a href="" class="submenu-link">Орехи и сухофрукты <span>200</span></a>
+                            <li>
+                                <p>Фрукты <span>2465</span></p>
+                                <span class="submenu-link submenu-link-js"></span>
+                            </li>
+                            <li class="">
+                                <p class="">Орехи и сухофрукты <span>200</span></p>
+                                <span class="submenu-link submenu-link-js"></span>
+                                <ul class="submenu submenu-js">
+                                    <li class="active"><a href="">меню третьего уровня <span>15</span></a></li>
+                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
+                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
+                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
+                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
+                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
+                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
+                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
+                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
+                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
+                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
+                                </ul>
+                            </li>
+                            <li><p>Овощи <span>1500</span></p><span class="submenu-link submenu-link-js"></span></li>
+                            <li><p>Зелень <span>1500</span></p><span class="submenu-link submenu-link-js"></span></li>
+                            <li><p>Овощи <span>1500</span></p><span class="submenu-link submenu-link-js"></span></li>
+                            <li><p>Овощи <span>1500</span></p><span class="submenu-link submenu-link-js"></span></li>
+                            <li><p>Овощи <span>1500</span></p><span class="submenu-link submenu-link-js"></span></li>
+                        </ul>
+                    </li>
+                    <li class="submenu-link-js">
+                        <a href="#" class="link">
+                            <svg>
+                                <use xlink:href="img/svg-sprite.svg#box"></use>
+                            </svg>
+                            Услуги
+                        </a>
+                        <span class="submenu-link submenu-link-js"></span>
+                        <ul class="submenu">
+                            <li>
+                                <p>Фрукты <span>2465</span></p>
+                                <span class="submenu-link submenu-link-js"></span>
+                            </li>
+                            <li class="submenu-link-js">
+                                <p>Орехи и сухофрукты <span>200</span></p>
+                                <span class="submenu-link submenu-link-js"></span>
                                 <ul class="submenu submenu-js">
                                     <li><a href="">меню третьего уровня <span>15</span></a></li>
                                     <li><a href="">меню третьего уровня <span>15</span></a></li>
@@ -104,45 +159,34 @@
                                     <li><a href="">меню третьего уровня <span>15</span></a></li>
                                 </ul>
                             </li>
-                            <li><a href="">Овощи <span>1500</span></a></li>
-                            <li><a href="">Зелень <span>1500</span></a></li>
-                            <li><a href="">Овощи <span>1500</span></a></li>
-                            <li><a href="">Овощи <span>1500</span></a></li>
-                            <li><a href="">Овощи <span>1500</span></a></li>
                         </ul>
-                    </a></li>
-                    <li class="submenu-link-js"><a href="#" class="link">
-                        Услуги
-                        <ul class="submenu">
-                            <li><a href="">Фрукты <span>2465</span></a></li>
-                            <li><a href="" class="submenu-link">Орехи и сухофрукты <span>200</span></a>
-                                <ul class="submenu submenu-js">
-                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
-                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
-                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
-                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
-                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
-                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
-                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
-                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
-                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
-                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
-                                    <li><a href="">меню третьего уровня <span>15</span></a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </a></li>
-                    <li class=""><a href="#" class="link">Поставщики</a></li>
-                    <li><a href="#" class="link">Информация</a></li>
+                    </li>
+                    <li class="">
+                        <a href="#" class="link">
+                            <svg>
+                                <use xlink:href="img/svg-sprite.svg#waiter"></use>
+                            </svg>
+                            Поставщики
+                        </a>
+                        <span class="submenu-link submenu-link-js"></span>
+                    </li>
+                    <li>
+                        <a href="#" class="link">
+                            <svg>
+                                <use xlink:href="img/svg-sprite.svg#book"></use>
+                            </svg>
+                            Информация
+                        </a>
+                        <span class="submenu-link submenu-link-js"></span>
+                    </li>
                 </ul>
-                <ul class="header__menu-main d-flex justify-content-end align-items-center">
+                <ul class="header__menu-main header__menu-main_2 justify-content-end">
                     <li>
                         <a href="#" class="header__bookmark link">
                             <svg>
                                 <use xlink:href="img/svg-sprite.svg#bookmark"></use>
                             </svg>
-                            Закладки
-
+                            <span>Закладки</span>
                             <span class="header__bookmark-number">28</span>
                         </a>
                     </li>
@@ -151,7 +195,7 @@
                             <svg>
                                 <use xlink:href="img/svg-sprite.svg#user"></use>
                             </svg>
-                            Личный кабинет
+                            <span>Личный кабинет</span>
                         </a>
                     </li>
                 </ul>
@@ -169,15 +213,13 @@
             <!--Sidebar-->
 
             <aside class="sidebar">
-                <h3 class="sidebar__title-h3 title-h3 title-h3_white block-toggle-js">
+                <h3 class="sidebar__title-h3 title-h3 title-h3_white">
                     Регионы
-                    <svg>
-                        <use xlink:href="img/svg-sprite.svg#map-pin"></use>
-                    </svg>
+                    <span class="btn-close region-close-js"></span>
                 </h3>
                 <div class="block__wrap">
                     <div class="sidebar__block block">
-                        <h4 class="sidebar__title-h4 title-h4 d-flex justify-content-between align-items-center block-toggle-js">
+                        <h4 class="sidebar__title-h4 title-h4 d-flex justify-content-between align-items-center toggle-js">
                             Страна</h4>
                         <div class="block__wrap">
                             <ul class="block__list">
@@ -230,7 +272,7 @@
                         </div>
                     </div>
                     <div class="sidebar__block block">
-                        <h4 class="sidebar__title-h4 title-h4 d-flex justify-content-between align-items-center block-toggle-js">
+                        <h4 class="sidebar__title-h4 title-h4 d-flex justify-content-between align-items-center toggle-js">
                             Регион</h4>
                         <div class="block__wrap">
                             <ul class="block__list">
@@ -266,10 +308,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="block">
-                        <button type="button" class="btn sidebar__btn btn_green">Применить</button>
-                        <button type="button" class="btn sidebar__btn btn_grey">Сбросить</button>
-                    </div>
+                </div>
+                <div class="block">
+                    <button type="button" class="btn sidebar__btn btn_green">Применить</button>
+                    <button type="button" class="btn sidebar__btn btn_grey">Сбросить</button>
                 </div>
             </aside>
 
@@ -278,19 +320,31 @@
         </div>
         <div class="col-lg-9">
             <main class="catalog">
-                <a href="#" class="arrow-back">Услуги</a>
                 <ul class="breadcrumb">
                     <li><a href="#">АгроСити</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li>Ответственное хранение</li>
+                    <li><a href="#">Продукция</a></li>
+                    <li><a href="#">Овощи</a></li>
+                    <li>Картофель</li>
                 </ul>
-                <h2 class="catalog__title-h2 title-h2">Ответственное хранение</h2>
+                <h2 class="catalog__title-h2 title-h2">Картофель</h2>
 
                 <!--Sort-->
 
                 <div class="catalog__sorting-block d-flex justify-content-between align-items-center">
                     <p class="catalog__number">Предложений: 58</p>
-                    <div class="d-flex align-items-center justify-content-end">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="catalog__filter-region-title title-h3 title-h3_white region-toggle-js">
+                            Регионы
+                            <svg>
+                                <use xlink:href="img/svg-sprite.svg#map-pin"></use>
+                            </svg>
+                        </div>
+                        <div class="catalog__filter-title filter-toggle-js">
+                            Фильтры
+                            <svg>
+                                <use xlink:href="img/svg-sprite.svg#filter"></use>
+                            </svg>
+                        </div>
                         <div class="sorting">
                             <button type="button" class="filter__btn-js">
                                 <span class="sorting__btn">Сортировка</span>
@@ -301,19 +355,16 @@
                             <form class="filter__dropdown" method="get">
                                 <ul class="filter__list">
                                     <li>
-                                        <input type="checkbox" id="price1" value="" class="filter__check-js">
-                                        <label class="checkbox-marker" for="price1"></label>
-                                        <p class="checkbox-label">Сначала дешевые</p>
+                                        <input type="radio" id="price1" value="price-low" name="sort[]">
+                                        <label class="checkbox-marker" for="price1">Сначала дешевые</label>
                                     </li>
                                     <li>
-                                        <input type="checkbox" id="price2" value="" class="filter__check-js">
-                                        <label class="checkbox-marker" for="price2"></label>
-                                        <p class="checkbox-label">Сначала дорогие</p>
+                                        <input type="radio" id="price2" value="price-high" name="sort[]">
+                                        <label class="checkbox-marker" for="price2">Сначала дорогие</label>
                                     </li>
                                 </ul>
                             </form>
                         </div>
-
                         <button type="button" class="btn-toggle btn-card active">
                             <svg>
                                 <use xlink:href="img/svg-sprite.svg#cards"></use>
@@ -337,225 +388,217 @@
                 <!--Filter-->
 
                 <form class="catalog__filter-block">
-                    <p class="catalog__filter-title block-toggle-js">
-                        Фильтры
-                        <svg>
-                            <use xlink:href="img/svg-sprite.svg#filter"></use>
-                        </svg>
-                    </p>
-                    <div class="block__wrap">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="catalog__filter">
-                                    <span>Фильтры:</span>
-                                    <div class="filter" id="country">
-                                        <button type="button" class="filter__btn filter__btn-js active">
-                                            Страна-производитель
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="catalog__filter">
+                                <span>Фильтры:</span>
+                                <div class="filter" id="country">
+                                    <button type="button" class="filter__btn filter__btn-js active">
+                                        Страна-производитель
+                                    </button>
+                                    <div class="filter__dropdown">
+                                        <p class="filter__title">Страна-производитель</p>
+                                        <span class="btn-close filter-close-js"></span>
+                                        <input type="search" class="filter__search">
+                                        <ul class="filter__list">
+                                            <li>
+                                                <input type="checkbox"
+                                                       id="country1"
+                                                       value=""
+                                                       class="filter__check-js"
+                                                       checked="checked">
+                                                <label class="checkbox-marker" for="country1"></label>
+                                                <p class="checkbox-label">Россия</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="country2" value="" class="filter__check-js">
+                                                <label class="checkbox-marker" for="country2"></label>
+                                                <p class="checkbox-label">Украина</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="country3" value="" class="filter__check-js">
+                                                <label class="checkbox-marker" for="country3"></label>
+                                                <p class="checkbox-label">Белоруссия</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="country4" value="" class="filter__check-js">
+                                                <label class="checkbox-marker" for="country4"></label>
+                                                <p class="checkbox-label">Казахстан</p>
+                                            </li>
+                                        </ul>
+                                        <button type="submit" class="filter__submit btn btn_green">Применить
                                         </button>
-                                        <div class="filter__dropdown">
-                                            <input type="search" class="filter__search">
-                                            <ul class="filter__list">
-                                                <li>
-                                                    <input type="checkbox"
-                                                           id="country1"
-                                                           value=""
-                                                           class="filter__check-js"
-                                                           checked="checked">
-                                                    <label class="checkbox-marker" for="country1"></label>
-                                                    <p class="checkbox-label">Россия</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox"
-                                                           id="country2"
-                                                           value=""
-                                                           class="filter__check-js">
-                                                    <label class="checkbox-marker" for="country2"></label>
-                                                    <p class="checkbox-label">Украина</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox"
-                                                           id="country3"
-                                                           value=""
-                                                           class="filter__check-js">
-                                                    <label class="checkbox-marker" for="country3"></label>
-                                                    <p class="checkbox-label">Белоруссия</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox"
-                                                           id="country4"
-                                                           value=""
-                                                           class="filter__check-js">
-                                                    <label class="checkbox-marker" for="country4"></label>
-                                                    <p class="checkbox-label">Казахстан</p>
-                                                </li>
-                                            </ul>
-                                            <button type="submit" class="filter__submit btn btn_green">Применить
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="filter" id="grade">
-                                        <button type="button" class="filter__btn filter__btn-js">Сорт</button>
-                                        <div class="filter__dropdown">
-                                            <input type="search" class="filter__search">
-                                            <ul class="filter__list os-host-flexbox">
-                                                <li>
-                                                    <input type="checkbox" id="grade1" value="">
-                                                    <label class="checkbox-marker" for="grade1"></label>
-                                                    <p class="checkbox-label">Сорт1</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="grade2" value="">
-                                                    <label class="checkbox-marker" for="grade2"></label>
-                                                    <p class="checkbox-label">Сорт1</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="grade3" value="">
-                                                    <label class="checkbox-marker" for="grade3"></label>
-                                                    <p class="checkbox-label">Сорт3</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="grade4" value="">
-                                                    <label class="checkbox-marker" for="grade4"></label>
-                                                    <p class="checkbox-label">Сорт4</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="grade5" value="">
-                                                    <label class="checkbox-marker" for="grade5"></label>
-                                                    <p class="checkbox-label">Сорт4</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="grade6" value="">
-                                                    <label class="checkbox-marker" for="grade6"></label>
-                                                    <p class="checkbox-label">Сорт4</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="grade7" value="">
-                                                    <label class="checkbox-marker" for="grade7"></label>
-                                                    <p class="checkbox-label">Сорт7</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="grade8" value="">
-                                                    <label class="checkbox-marker" for="grade8"></label>
-                                                    <p class="checkbox-label">Сорт8</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="grade9" value="">
-                                                    <label class="checkbox-marker" for="grade9"></label>
-                                                    <p class="checkbox-label">Сорт9</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="grade10" value="">
-                                                    <label class="checkbox-marker" for="grade10"></label>
-                                                    <p class="checkbox-label">Сорт10</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="grade11" value="">
-                                                    <label class="checkbox-marker" for="grade11"></label>
-                                                    <p class="checkbox-label">Сорт11</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="grade12" value="">
-                                                    <label class="checkbox-marker" for="grade12"></label>
-                                                    <p class="checkbox-label">Сорт12</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="grade13" value="">
-                                                    <label class="checkbox-marker" for="grade13"></label>
-                                                    <p class="checkbox-label">Сорт13</p>
-                                                </li>
-                                            </ul>
-                                            <button type="submit" class="filter__submit btn btn_green">Применить
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="filter" id="size">
-                                        <button type="button" class="filter__btn filter__btn-js">Калибр</button>
-                                        <div class="filter__dropdown">
-                                            <input type="search" class="filter__search">
-                                            <ul class="filter__list">
-                                                <li>
-                                                    <input type="checkbox" id="size1" value="">
-                                                    <label class="checkbox-marker" for="size1"></label>
-                                                    <p class="checkbox-label">4+</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="size2" value="">
-                                                    <label class="checkbox-marker" for="size2"></label>
-                                                    <p class="checkbox-label">5+</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="size3" value="">
-                                                    <label class="checkbox-marker" for="size3"></label>
-                                                    <p class="checkbox-label">6+</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="size4" value="">
-                                                    <label class="checkbox-marker" for="size4"></label>
-                                                    <p class="checkbox-label">7+</p>
-                                                </li>
-                                            </ul>
-                                            <button type="submit" class="filter__submit btn btn_green">Применить
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="filter" id="packing">
-                                        <button type="button" class="filter__btn filter__btn-js">Фасовка</button>
-                                        <div class="filter__dropdown">
-                                            <input type="search" class="filter__search">
-                                            <ul class="filter__list">
-                                                <li>
-                                                    <input type="checkbox" id="packing1" value="">
-                                                    <label class="checkbox-marker" for="packing1"></label>
-                                                    <p class="checkbox-label">5кг</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="packing2" value="">
-                                                    <label class="checkbox-marker" for="packing2"></label>
-                                                    <p class="checkbox-label">10кг</p>
-                                                </li>
-                                            </ul>
-                                            <button type="submit" class="filter__submit btn btn_green">Применить
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="filter" id="delivery">
-                                        <button type="button" class="filter__btn filter__btn-js">Доставка</button>
-                                        <div class="filter__dropdown">
-                                            <input type="search" class="filter__search">
-                                            <ul class="filter__list">
-                                                <li>
-                                                    <input type="checkbox" id="delivery1" value="">
-                                                    <label class="checkbox-marker" for="delivery1"></label>
-                                                    <p class="checkbox-label">Почтой</p>
-                                                </li>
-                                                <li>
-                                                    <input type="checkbox" id="delivery2" value="">
-                                                    <label class="checkbox-marker" for="delivery2"></label>
-                                                    <p class="checkbox-label">Транспортная компания</p>
-                                                </li>
-                                            </ul>
-                                            <button type="submit" class="filter__submit btn btn_green">Применить
-                                            </button>
-                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row flex-wrap">
-                            <div class="col-12 d-lg-flex justify-content-between d-block">
-                                <div class="filter__current">
-                                    <span class="filter__title">Страна-производитель:</span>
-                                    <a href="#" class="filter__value link">Россия<span class="filter__close"></span></a>
+                                <div class="filter" id="grade">
+                                    <button type="button" class="filter__btn filter__btn-js">Сорт</button>
+                                    <div class="filter__dropdown">
+                                        <p class="filter__title">Сорт</p>
+                                        <span class="btn-close filter-close-js"></span>
+                                        <input type="search" class="filter__search">
+                                        <ul class="filter__list os-host-flexbox">
+                                            <li>
+                                                <input type="checkbox" id="grade1" value="">
+                                                <label class="checkbox-marker" for="grade1"></label>
+                                                <p class="checkbox-label">Сорт1</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="grade2" value="">
+                                                <label class="checkbox-marker" for="grade2"></label>
+                                                <p class="checkbox-label">Сорт1</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="grade3" value="">
+                                                <label class="checkbox-marker" for="grade3"></label>
+                                                <p class="checkbox-label">Сорт3</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="grade4" value="">
+                                                <label class="checkbox-marker" for="grade4"></label>
+                                                <p class="checkbox-label">Сорт4</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="grade5" value="">
+                                                <label class="checkbox-marker" for="grade5"></label>
+                                                <p class="checkbox-label">Сорт4</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="grade6" value="">
+                                                <label class="checkbox-marker" for="grade6"></label>
+                                                <p class="checkbox-label">Сорт4</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="grade7" value="">
+                                                <label class="checkbox-marker" for="grade7"></label>
+                                                <p class="checkbox-label">Сорт7</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="grade8" value="">
+                                                <label class="checkbox-marker" for="grade8"></label>
+                                                <p class="checkbox-label">Сорт8</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="grade9" value="">
+                                                <label class="checkbox-marker" for="grade9"></label>
+                                                <p class="checkbox-label">Сорт9</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="grade10" value="">
+                                                <label class="checkbox-marker" for="grade10"></label>
+                                                <p class="checkbox-label">Сорт10</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="grade11" value="">
+                                                <label class="checkbox-marker" for="grade11"></label>
+                                                <p class="checkbox-label">Сорт11</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="grade12" value="">
+                                                <label class="checkbox-marker" for="grade12"></label>
+                                                <p class="checkbox-label">Сорт12</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="grade13" value="">
+                                                <label class="checkbox-marker" for="grade13"></label>
+                                                <p class="checkbox-label">Сорт13</p>
+                                            </li>
+                                        </ul>
+                                        <button type="submit" class="filter__submit btn btn_green">Применить
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="filter__current d-flex align-items-center"></div>
-                            </div>
-                            <div class="col-12">
-                                <button type="button" class="catalog__filter-reset filter-reset">Сбросить все фильтры
-                                </button>
+                                <div class="filter" id="size">
+                                    <button type="button" class="filter__btn filter__btn-js">Калибр</button>
+                                    <div class="filter__dropdown">
+                                        <p class="filter__title">Калибр</p>
+                                        <span class="btn-close filter-close-js"></span>
+                                        <input type="search" class="filter__search">
+                                        <ul class="filter__list">
+                                            <li>
+                                                <input type="checkbox" id="size1" value="">
+                                                <label class="checkbox-marker" for="size1"></label>
+                                                <p class="checkbox-label">4+</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="size2" value="">
+                                                <label class="checkbox-marker" for="size2"></label>
+                                                <p class="checkbox-label">5+</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="size3" value="">
+                                                <label class="checkbox-marker" for="size3"></label>
+                                                <p class="checkbox-label">6+</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="size4" value="">
+                                                <label class="checkbox-marker" for="size4"></label>
+                                                <p class="checkbox-label">7+</p>
+                                            </li>
+                                        </ul>
+                                        <button type="submit" class="filter__submit btn btn_green">Применить
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="filter" id="packing">
+                                    <button type="button" class="filter__btn filter__btn-js">Фасовка</button>
+                                    <div class="filter__dropdown">
+                                        <p class="filter__title">Фасовка</p>
+                                        <span class="btn-close filter-close-js"></span>
+                                        <input type="search" class="filter__search">
+                                        <ul class="filter__list">
+                                            <li>
+                                                <input type="checkbox" id="packing1" value="">
+                                                <label class="checkbox-marker" for="packing1"></label>
+                                                <p class="checkbox-label">5кг</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="packing2" value="">
+                                                <label class="checkbox-marker" for="packing2"></label>
+                                                <p class="checkbox-label">10кг</p>
+                                            </li>
+                                        </ul>
+                                        <button type="submit" class="filter__submit btn btn_green">Применить
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="filter" id="delivery">
+                                    <button type="button" class="filter__btn filter__btn-js">Доставка</button>
+                                    <div class="filter__dropdown">
+                                        <p class="filter__title">Доставка</p>
+                                        <span class="btn-close filter-close-js"></span>
+                                        <input type="search" class="filter__search">
+                                        <ul class="filter__list">
+                                            <li>
+                                                <input type="checkbox" id="delivery1" value="">
+                                                <label class="checkbox-marker" for="delivery1"></label>
+                                                <p class="checkbox-label">Почтой</p>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="delivery2" value="">
+                                                <label class="checkbox-marker" for="delivery2"></label>
+                                                <p class="checkbox-label">Транспортная компания</p>
+                                            </li>
+                                        </ul>
+                                        <button type="submit" class="filter__submit btn btn_green">Применить
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
+                    <div class="row flex-wrap">
+                        <div class="col-12 d-lg-flex justify-content-between d-block">
+                            <div class="filter__current">
+                                <span class="filter__title">Страна-производитель:</span>
+                                <a href="#" class="filter__value link">Россия<span class="filter__close"></span></a>
+                            </div>
+                            <div class="filter__current d-flex align-items-center"></div>
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="catalog__filter-reset filter-reset">Сбросить все фильтры
+                            </button>
+                        </div>
+                    </div>
                 </form>
 
                 <!--Filter End-->
@@ -563,7 +606,7 @@
                 <!--Catalog-->
 
                 <div class="row">
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-md-4 col-sm-6">
                         <div class="catalog__card card">
                             <div class="card__img-wrap">
                                 <p class="card__date">Сегодня, 08:58</p>
@@ -585,7 +628,7 @@
                                     </svg>
                                 </p>
                                 <p class="card__bookmark card__bookmark_remove d-none">
-                                    <sapn class="d-lg-block d-none">Удалить закладку</sapn>
+                                    <span>Удалить закладку</span>
                                     <svg>
                                         <use xlink:href="img/svg-sprite.svg#bookmark-fill"></use>
                                     </svg>
@@ -593,7 +636,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-md-4 col-sm-6">
                         <div class="catalog__card card">
                             <div class="card__img-wrap">
                                 <p class="card__date">Сегодня, 08:58</p>
@@ -615,7 +658,7 @@
                                     </svg>
                                 </p>
                                 <p class="card__bookmark card__bookmark_remove d-none">
-                                    <sapn class="d-lg-block d-none">Удалить закладку</sapn>
+                                    <span>Удалить закладку</span>
                                     <svg>
                                         <use xlink:href="img/svg-sprite.svg#bookmark-fill"></use>
                                     </svg>
@@ -623,7 +666,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-md-4 col-sm-6">
                         <div class="catalog__card card">
                             <div class="card__img-wrap">
                                 <p class="card__date">Сегодня, 08:58</p>
@@ -645,7 +688,7 @@
                                     </svg>
                                 </p>
                                 <p class="card__bookmark card__bookmark_remove d-none">
-                                    <sapn class="d-lg-block d-none">Удалить закладку</sapn>
+                                    <span>Удалить закладку</span>
                                     <svg>
                                         <use xlink:href="img/svg-sprite.svg#bookmark-fill"></use>
                                     </svg>
@@ -678,24 +721,15 @@
 <!--Footer-->
 
 <footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <p class="footer__text">© 2019 AgroSity.ru</p>
-                <p class="footer__text">Все права защищены</p>
-            </div>
-            <div class="col-md-9">
-                <ul class="footer__menu d-flex">
-                    <li><a href="#" class="link" title="Новости">Новости</a></li>
-                    <li><a href="#" class="link" title="Аналитика">Аналитика</a></li>
-                    <li><a href="#" class="link" title="О проекте">О проекте</a></li>
-                    <li><a href="#" class="link" title="Правила сайта">Правила сайта</a></li>
-                    <li><a href="#" class="link" title="Тарифы">Тарифы</a></li>
-                </ul>
-                <a href="#" class="footer__link link">Политика конфиденциальности</a>
-                <a href="#" class="footer__link link">Обратная связь</a>
-            </div>
+    <div class="footer__top">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#" class="footer__link link">Правовая информация</a>
+            <a href="#" class="link"><img src="img/a-platforma.svg" alt="" class="footer__logo"></a>
+            <a href="#" class="footer__link link">Политика конфиденциальности</a>
         </div>
+    </div>
+    <div class="footer__bottom">
+        <p>Разработка сайта – <a href="#">интернет-агенство «Диаграмма»</a></p>
     </div>
 </footer>
 
