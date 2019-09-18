@@ -170,16 +170,7 @@
         color: #fff;
         font-weight: normal;
     }
-    /*.sidebar {*/
-    /*    position: absolute;*/
-    /*    top: 150px;*/
-    /*    left: 15px;*/
-    /*    width: 44%;*/
-    /*    padding-bottom: 0;*/
-    /*    padding-top: 0;*/
-    /*    box-shadow: none;*/
-    /*    z-index: 100;*/
-    /*}*/
+
     .catalog__filter-block {
         position: absolute;
         border-radius: 5px;
@@ -190,6 +181,9 @@
         left: 10px;
         top: 210px;
         z-index: 200;
+    }
+    .catalog__search-result .catalog__filter-block {
+        top: 290px;
     }
     .card__bookmark_remove span {
         display: none;
@@ -390,6 +384,11 @@
     .card__provider {
         display: none;
     }
+    .change-result-block {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom: 20px;
+    }
 }
 @media screen and (max-width: 768px) {
 /* CSS для ширины от 576px до 767px */
@@ -418,7 +417,7 @@
         width: 500px;
     }
     .catalog__filter-block {
-        top: 10%;
+        top: 210px;
     }
     .catalog__filter {
         flex-wrap: wrap;
@@ -608,6 +607,10 @@
         top: 160px;
         border-radius: 0;
     }
+    .catalog__search-result .sorting .filter__dropdown {
+        top: auto;
+        margin-top: 20px;
+    }
     .sorting,
     .header__middle .container {
         position: static;
@@ -634,5 +637,17 @@
     .card__bookmark-wrap {
         top: auto;
         bottom: 15px;
+    }
+    .change-result-block {
+        flex-wrap: wrap;
+    }
+    .change-result-block .filter__btn {
+        min-width: 135px;
+    }
+    .change-result-block .filter__btn:not(:last-child) {
+        margin-bottom: 12px;
+    }
+    .catalog__search-result .catalog__filter-block {
+        top: auto;
     }
 }

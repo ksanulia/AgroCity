@@ -495,6 +495,7 @@ input[type="search"]::placeholder {
     font-weight: 700;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 .header__menu-main {
     display: flex;
@@ -2468,4 +2469,23 @@ input[type="radio"]:checked ~ .form__label-radio:after {
 .product-card__price {
     padding: 15px;
     margin-bottom: 10px;
+}
+/*Search-result Page*/
+
+.change-result-block {
+    display: flex;
+    margin-bottom: 0;
+}
+.change-result-block .filter__btn.active {
+    background: #fff;
+    border: 1px solid #54b94a;
+    color: inherit;
+}
+.change-result-block .filter__btn.active .card__text_fade {
+    color: #9e9e9e;
+}
+.catalog__result-number {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
 }
