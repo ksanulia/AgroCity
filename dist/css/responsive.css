@@ -42,6 +42,45 @@
     .header__middle .col-xl-4:first-child {
         margin-bottom: 30px;
     }
+    .header__offer {
+        padding: 75px 0 185px;
+    }
+    .title-h1 {
+        font-size: 40px;
+    }
+    .subtitle {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .advantages__cards-wrap {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    .advantages__card {
+        width: 48%;
+    }
+    .advantages__card:not(:last-child) {
+        margin-right: 0;
+    }
+    .advantages__card {
+        margin-bottom: 20px;
+    }
+    .main-page .change-block {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+    .advantages__item {
+        display: flex;
+        text-align: left;
+        align-items: center;
+    }
+    .advantages__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    .item__icon {
+        margin: 0 15px 0 0;
+    }
     .header__menu {
         display: none;
         position: absolute;
@@ -389,6 +428,12 @@
         border-bottom: 1px solid #e0e0e0;
         margin-bottom: 20px;
     }
+    .contact-us {
+        padding: 75px 0 85px;
+    }
+    .contact-us .catalog__btn {
+        margin-top: 20px;
+    }
 }
 @media screen and (max-width: 768px) {
 /* CSS для ширины от 576px до 767px */
@@ -398,6 +443,11 @@
     }
     .header__phone span {
         display: none;
+    }
+
+    .social {
+        justify-content: center;
+        margin-top: 20px;
     }
     .footer__top .container {
         flex-direction: column;
@@ -434,11 +484,33 @@
     .container {
         width: 100%;
     }
+    .title-h1 {
+        font-size: 30px;
+    }
+    .header__offer {
+        padding: 55px 0 165px;
+    }
+    .main-page .header__logo-description {
+        margin-top: 7px;
+        text-align: center;
+        padding-left: 0;
+        border-left: 0;
+    }
+    .main-page .container {
+        width: 90%;
+    }
+    .subtitle {
+        font-size: 15px;
+        line-height: 21px;
+    }
     .arrow-back {
         margin: 0 0 25px;
     }
     .title-h2 {
         font-size: 25px;
+    }
+    .main-page .title-h2 {
+        letter-spacing: 0.03em;
     }
     .catalog__title-h2 {
         margin-bottom: 10px;
@@ -649,5 +721,23 @@
     }
     .catalog__search-result .catalog__filter-block {
         top: auto;
+    }
+    .advantages__card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .advantages__item {
+        display: block;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .item__icon {
+        margin: 0 auto 15px;
+    }
+    .advantages {
+        padding-bottom: 35px;
+    }
+    .contact-us {
+        padding: 55px 0 65px;
     }
 }
